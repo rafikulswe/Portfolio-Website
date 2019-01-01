@@ -1,0 +1,646 @@
+/*---------------------------------------------------*
+* Template Name  : -Personal Portfolio
+* Version        : 1.0
+* Version        : 1.0.0
+* Created        : February 2017
+*----------------------------------------------------*
+*/
+
+/*==============
+*  1.Basic
+*  2.Helper
+*  3.Preloader
+*  4.Navbar
+*  5.Home
+*  6.About Us
+*  7.Services
+*  8.Testimonial
+*  9.Portfolio
+*  10.Blog
+*  11.Contact Us
+*  12.Footer
+*  13.Responsive
+*=================
+*/
+
+
+/*=================
+  1.Basic
+=================== */
+
+body {
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nunito', sans-serif;
+}
+
+a,
+a:hover,
+a:focus,
+button {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+
+/*==================
+  2.HELPER
+====================*/
+
+.section {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    position: relative;
+}
+
+.bg-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+.section-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-subtitle {
+    letter-spacing: 0.4px;
+    line-height: 28px;
+    max-width: 650px;
+}
+
+.section-title-border::after,
+.section-title-border::before {
+    background-color: #000;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 60px;
+    height: 2px;
+    margin-top: -4px;
+}
+
+.text-custom {
+    color: #1dc6df;
+}
+
+.btn {
+    padding: 12px 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-custom-outline {
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
+    transition: all 0.3s;
+}
+
+.btn-custom-outline:hover,
+.btn-custom-outline:focus,
+.btn-custom-outline:active,
+.btn-custom-outline.active,
+.btn-custom-outline.focus,
+.btn-custom-outline:active,
+.btn-custom-outline:focus,
+.btn-custom-outline:hover,
+.open > .dropdown-toggle.btn-custom-outline {
+    color: #f3f3f3 !important;
+    transition: all 0.5s;
+    background-color: #000;
+}
+
+
+/*==================
+    3.PRELOADER
+====================*/
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    z-index: 9999999;
+}
+
+#status {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -20px 0 0 -20px;
+}
+
+.spinner {
+    margin: 0 auto;
+    font-size: 10px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 5px solid rgba(255, 255, 255, 0.2);
+    border-right: 5px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.2);
+    border-left: 5px solid #fff;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load8 1.1s infinite linear;
+    animation: load8 1.1s infinite linear;
+}
+
+.spinner,
+.spinner:after {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+@-webkit-keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/*==================
+    4.Navbar
+====================*/
+
+.navbar-custom {
+    padding: 20px 0px;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 999;
+    margin-bottom: 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-custom .navbar-nav li a {
+    line-height: 28px;
+    color: #fff;
+    font-size: 15px;
+    background-color: transparent !important;
+    padding: 7px 0;
+    margin: 0 7px;
+    transition: all 0.4s;
+}
+
+.navbar-toggler {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+
+.stickyadd .navbar-nav {
+    margin-top: 0px;
+}
+
+.stickyadd.navbar-custom {
+    margin-top: 0px;
+    padding: 10px 0px;
+    background-color: #000;
+    box-shadow: 0 10px 33px rgba(0, 0, 0, .1);
+    color: #000 !important;
+}
+
+.logo {
+    color: #fff !important;
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-nav li.active a {
+    color: #1dc6df !important;
+}
+
+.navbar-custom .navbar-nav li.active a,
+.navbar-custom .navbar-nav li a:hover,
+.navbar-custom .navbar-nav li a:active {
+    color: #1dc6df !important;
+}
+
+.navbar-toggle {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+    background-color: transparent;
+    border-color: #337ab7;
+}
+
+
+/*==================
+  5.HOME
+====================*/
+
+.bg-home {
+    /* background-image: url('../images/02_home.jpg'); */
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.home-bg-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.home-title {
+    font-size: 80px;
+}
+
+.home-title span {
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.home-table-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.home-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*----DEMO-2----*/
+
+.slide-set {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0;
+}
+
+
+/*----DEMO-3/DEMO-4/DEMO-6---*/
+
+.home-clip {
+    clip-path: polygon(0 0, 100% 0%, 100% 88%, 0% 100%);
+}
+
+
+/*----DEMO-4----*/
+
+.bg-video {
+    height: 100vh;
+    background-color: #000;
+}
+
+
+/*==================
+  6.ABOUT US
+====================*/
+
+.about-desc {
+    line-height: 30px;
+    max-width: 500px;
+}
+
+.progress-bar {
+    background-color: #000;
+    height: 5px;
+}
+
+
+/*==================
+  7.SERVICES
+====================*/
+
+.services-boxed {
+    transition: all 0.5s;
+}
+
+.services-boxed:hover .services-icons,.services-boxed:hover .services-content h5 {
+    color: #1dc6df;
+}
+
+.services-boxed .services-icons {
+    font-size: 42px;
+    transition: all 0.5s;
+}
+
+.services-boxed .services-content h5 {
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.services-boxed .services-content p {
+    font-size: 15px;
+}
+
+
+/*===================
+  8.TESTIMONIAL
+=====================*/
+
+.bg-client {
+    background-attachment: fixed;
+    background-image: url('../images/bg-client.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.client-post .testi-user-name {
+    font-size: 16px;
+}
+
+.client-post .testi-user-work {
+    font-size: 13px;
+}
+
+
+/*===================
+  9.PORTFOLIO
+=====================*/
+
+.portfolio {
+    overflow: hidden
+}
+
+.filter-list li a {
+    padding: 8px 10px;
+    cursor: pointer;
+    display: block;
+}
+
+.filter-list a {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    transition: all 0.5s;
+}
+
+.filter-list a.active,
+.filter-list a:hover {
+    color: #1dc6df !important;
+}
+
+.item-img {
+    padding: 15px;
+    position: relative;
+}
+
+.item-img-overlay {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    background: rgba(29, 198, 223, .5);
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s
+}
+
+.item-img-overlay .icon {
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+.item-img-overlay .icon:before {
+    content: '';
+    width: 2px;
+    height: 70px;
+    background: #eee;
+    position: absolute;
+    top: 0;
+    left: 50%
+}
+
+.item-img-overlay .icon:after {
+    content: '';
+    width: 70px;
+    height: 2px;
+    background: #eee;
+    position: absolute;
+    top: 50%;
+    left: 0
+}
+
+.v-middle {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.v-middle span {
+    display: inline-block;
+}
+
+.item-img-overlay .overlay-info {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    transition: all .5s
+}
+
+.item-img-overlay .overlay-info p {
+    text-transform: uppercase;
+}
+
+.item-img-overlay:hover .overlay-info {
+    bottom: 10px
+}
+
+.item-img:hover .item-img-overlay {
+    opacity: 1
+}
+
+
+/*===================
+    10.BLOG
+=====================*/
+
+.blog-date,
+.read-more {
+    font-size: 13px;
+}
+
+.blog-img {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto -20px;
+    bottom: 40px;
+    transition: all 0.5s;
+}
+
+.blog-title {
+    font-weight: 600;
+}
+
+.blog-subtitle {
+    font-size: 15px;
+}
+
+.blog-date,
+.read-more {
+    font-size: 12px;
+}
+
+
+/*======================
+   11.CONTACT US
+========================*/
+
+.form-custom .form-control {
+    background-color: #f3f3f3;
+    border: none;
+    height: 45px;
+}
+
+textarea.form-control {
+    height: auto !important;
+}
+
+.contact-icon i {
+    font-size: 30px;
+}
+
+.contact-detail p {
+    font-size: 15px;
+}
+
+.contact-detail h5 {
+    font-weight: 600;
+}
+
+
+/*======================
+  12.FOOTER
+========================*/
+
+.footer {
+    background-color: #000;
+}
+
+.footer-alt p {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.footer-alt ul li a {
+    color: #fff;
+    font-size: 19px;
+    transition: all 0.5s;
+    padding: 10px 10px;
+}
+
+.footer-alt ul li a:hover {
+    color: #1dc6df;
+}
+
+
+
+/*=====================
+    13.RESPONSIVE
+=======================*/
+
+@media (min-width: 200px) and (max-width: 767px) {
+    .home-title {
+        font-size: 45px;
+    }
+    .navbar-custom {
+        margin-top: 0px;
+        padding: 10px 0px !important;
+        background-color: #000 !important;
+        box-shadow: 0 10px 33px rgba(0, 0, 0, .1);
+        color: #fff !important;
+    }
+    .navbar-custom .navbar-nav li a {
+        transition: all 0.4s;
+        color: #fff !important;
+        margin: 0px;
+    }
+    .navbar-custom>.container {
+        width: 90%;
+    }
+    .navbar-custom .navbar-nav li.active a {
+        border-color: transparent;
+    }
+    .navbar-nav {
+        margin-top: 0px;
+    }
+    .navbar-toggler {
+        font-size: 24px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: #ffffff;
+    }
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
